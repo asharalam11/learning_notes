@@ -19,5 +19,17 @@
   * We use __Docker__ to help build containers
 
 ### Kubernetes Engine
+
+Kubernetes is an orchestrator for containers to better manage and scale applications. It lets you deploy containers on a set of nodes called cluster. Cluster consists of master (that controls the system as a whole) and a set of nodes (which run the containers). In *Kubernetes, nodes are computing instances but in Google Cloud, nodes are VMs running in Compute Engine.* __Kubernetes Engine__ is *kubernetes as a managed service in the cloud*.
+
+#### :swimmer: Deep dive into Kubernetes Engine
+
+* __pod__: Smallest deployable unit in Kubernetes. Usuallym we have one container for each pod. 
+* `__kubectl__ run nginx --image=nginx:1.15.7`starts a deployment with a container running in a pod.
+* __deployment__: It refers to the group of replicas of the same pod
+* __GKE__: It helps in load balancing for containers
+* __service__: A service groups a set of pods together and provides a stable end point for them (like IP address). Services provide stable endpoints for nodes.
+Instead of using kubectl commands, we can have a configuration file for service.
+
 #### Containers
 
